@@ -13,6 +13,9 @@ class SuccessViewController: UIViewController {
     @IBOutlet weak var labeCardNUm: UILabel!
     var cardInfo = [String]()
     
+    @IBAction func goHome(_ sender: AnyObject) {
+        _ = self.navigationController?.popToRootViewController(animated: true)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         labeCardNUm.text = cardInfo[0]

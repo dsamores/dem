@@ -21,6 +21,8 @@
 		C60DB8A41DA5E74B005382B1 /* CreateCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C60DB8A31DA5E74B005382B1 /* CreateCardViewController.swift */; };
 		C6BEEE691DA9248C003360E8 /* SuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BEEE681DA9248C003360E8 /* SuccessViewController.swift */; };
 		C6BEEE6B1DA9294E003360E8 /* PagosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BEEE6A1DA9294E003360E8 /* PagosViewController.swift */; };
+		C6BEEE6D1DA93959003360E8 /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = C6BEEE6C1DA93959003360E8 /* home.png */; };
+		C6BEEE6F1DA939B4003360E8 /* home2.png in Resources */ = {isa = PBXBuildFile; fileRef = C6BEEE6E1DA939B4003360E8 /* home2.png */; };
 		C6FF67EB1DA3400700EDBDB5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6FF67EA1DA3400700EDBDB5 /* AppDelegate.swift */; };
 		C6FF67ED1DA3400700EDBDB5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6FF67EC1DA3400700EDBDB5 /* ViewController.swift */; };
 		C6FF67F01DA3400700EDBDB5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6FF67EE1DA3400700EDBDB5 /* Main.storyboard */; };
@@ -57,6 +59,8 @@
 		C60DB8A31DA5E74B005382B1 /* CreateCardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateCardViewController.swift; sourceTree = "<group>"; };
 		C6BEEE681DA9248C003360E8 /* SuccessViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuccessViewController.swift; sourceTree = "<group>"; };
 		C6BEEE6A1DA9294E003360E8 /* PagosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagosViewController.swift; sourceTree = "<group>"; };
+		C6BEEE6C1DA93959003360E8 /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home.png; sourceTree = "<group>"; };
+		C6BEEE6E1DA939B4003360E8 /* home2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home2.png; sourceTree = "<group>"; };
 		C6FF67E71DA3400700EDBDB5 /* DEM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DEM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6FF67EA1DA3400700EDBDB5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C6FF67EC1DA3400700EDBDB5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -125,6 +129,8 @@
 				C60DB8A31DA5E74B005382B1 /* CreateCardViewController.swift */,
 				654C89B31DA897340070926E /* Transfer.jpg */,
 				654C89B41DA897340070926E /* Stats-MesV2p.png */,
+				C6BEEE6C1DA93959003360E8 /* home.png */,
+				C6BEEE6E1DA939B4003360E8 /* home2.png */,
 				654C89B51DA897340070926E /* StatsAnualv2.png */,
 				654C89B61DA897340070926E /* StatsAnualv3.png */,
 				654C89B71DA897340070926E /* StatsMesV3.png */,
@@ -197,6 +203,7 @@
 				TargetAttributes = {
 					C6FF67E61DA3400700EDBDB5 = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = ZS6S5WHQ2G;
 						ProvisioningStyle = Automatic;
 					};
 					C6FF67FA1DA3400800EDBDB5 = {
@@ -237,10 +244,12 @@
 				654C89AC1DA8966A0070926E /* logotipo 1b.png in Resources */,
 				654C89BD1DA897340070926E /* Stats-MesV2p.png in Resources */,
 				654C89BF1DA897340070926E /* StatsAnualv3.png in Resources */,
+				C6BEEE6F1DA939B4003360E8 /* home2.png in Resources */,
 				C6FF67F01DA3400700EDBDB5 /* Main.storyboard in Resources */,
 				654C89CA1DA89A230070926E /* VC1.jpg in Resources */,
 				654C89C71DA89A230070926E /* LugarInteres.jpg in Resources */,
 				654C89C01DA897340070926E /* StatsMesV3.png in Resources */,
+				C6BEEE6D1DA93959003360E8 /* home.png in Resources */,
 				654C89C91DA89A230070926E /* Stats.jpg in Resources */,
 				654C89BE1DA897340070926E /* StatsAnualv2.png in Resources */,
 				654C89C61DA89A230070926E /* Historial.jpg in Resources */,
@@ -407,6 +416,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ZS6S5WHQ2G;
 				INFOPLIST_FILE = DEM/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "laboratorioscantun-a.com.DEM";
@@ -419,6 +429,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ZS6S5WHQ2G;
 				INFOPLIST_FILE = DEM/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "laboratorioscantun-a.com.DEM";
