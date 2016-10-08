@@ -6,16 +6,16 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Pagos View Controller-->
+        <!--Opción: Pago-->
         <scene sceneID="fm4-Dd-dzQ">
             <objects>
-                <viewController id="jHU-VS-xsp" customClass="PagosViewController" customModule="DEM" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Opción: Pago" id="jHU-VS-xsp" customClass="PagosViewController" customModule="DEM" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="wIW-4q-uSI"/>
                         <viewControllerLayoutGuide type="bottom" id="bly-hy-AZb"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="9jB-Ps-7P3">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Número de Teléfono" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iUP-Fm-LEf">
@@ -71,16 +71,16 @@
             </objects>
             <point key="canvasLocation" x="-2073.75" y="336.97183098591552"/>
         </scene>
-        <!--View Controller-->
+        <!--Transacciones-->
         <scene sceneID="nOO-wn-qn8">
             <objects>
-                <viewController id="LwG-gI-dyV" sceneMemberID="viewController">
+                <viewController title="Transacciones" id="LwG-gI-dyV" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="sjh-I1-b8f"/>
                         <viewControllerLayoutGuide type="bottom" id="twX-bw-XzE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="UoZ-PE-czp">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mrh-9W-RES">
@@ -125,10 +125,21 @@
         <scene sceneID="cbf-2h-d8K">
             <objects>
                 <navigationController id="9z7-EN-wLz" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="A9K-PL-jg4">
+                    <navigationBar key="navigationBar" opaque="NO" contentMode="scaleToFill" misplaced="YES" translucent="NO" id="A9K-PL-jg4">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="0.42245370370370372" alpha="0.97303082190000001" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" white="0.96513259116514227" alpha="1" colorSpace="calibratedWhite"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="textShadowColor" cocoaTouchSystemColor="darkTextColor"/>
+                        </textAttributes>
                     </navigationBar>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="y6V-J2-3B1">
+                        <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.90206512859999999" green="0.92029931070000004" blue="0.9568666643" alpha="0.95927868149999995" colorSpace="custom" customColorSpace="sRGB"/>
+                    </toolbar>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="KqK-mJ-vYn"/>
                     </connections>
@@ -146,7 +157,7 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" opaque="NO" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nnE-Vl-Raq">
@@ -210,38 +221,30 @@
             </objects>
             <point key="canvasLocation" x="112.5" y="120.4225352112676"/>
         </scene>
-        <!--View Controller Map-->
+        <!--Lugares de Interés-->
         <scene sceneID="t4w-70-ehw">
             <objects>
-                <viewController id="Zel-Zc-DmK" customClass="ViewControllerMap" customModule="DEM" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Lugares de Interés" id="Zel-Zc-DmK" customClass="ViewControllerMap" customModule="DEM" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ujR-BT-Ugx"/>
                         <viewControllerLayoutGuide type="bottom" id="rQe-Gb-gsb"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="O7S-Qh-WIP">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gkj-h4-6P4">
-                                <frame key="frameInset" minX="41" minY="149" width="240" height="262"/>
+                                <frame key="frameInset" minX="41" minY="67" width="240" height="262"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </mapView>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="g5o-PV-0vz">
-                                <frame key="frameInset" minX="1" minY="24" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <color key="barTintColor" red="0.90206512859999999" green="0.92029931070000004" blue="0.9568666643" alpha="0.95927868149999995" colorSpace="custom" customColorSpace="sRGB"/>
-                                <items>
-                                    <navigationItem title="Lugares de Interés" id="7xQ-Rx-84O"/>
-                                </items>
-                            </navigationBar>
                             <tableView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="30" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="9Cu-hc-0O6">
-                                <frame key="frameInset" minX="40" minY="419" width="240" height="128"/>
+                                <frame key="frameInset" minX="40" minY="358" width="240" height="190"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="sectionIndexColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="celda" id="ji1-En-RZs">
-                                        <rect key="frame" x="0.0" y="28" width="240" height="30"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="celda" rowHeight="106" id="ji1-En-RZs">
+                                        <rect key="frame" x="0.0" y="28" width="240" height="106"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ji1-En-RZs" id="WAy-xU-4gB">
                                             <frame key="frameInset" width="240" height="29"/>
@@ -249,7 +252,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="vAn-cl-Q5n">
-                                        <rect key="frame" x="0.0" y="58" width="240" height="30"/>
+                                        <rect key="frame" x="0.0" y="134" width="240" height="30"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="vAn-cl-Q5n" id="KfR-ZF-ASI">
                                             <frame key="frameInset" width="240" height="29"/>
@@ -257,7 +260,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="DLd-50-c2S">
-                                        <rect key="frame" x="0.0" y="88" width="240" height="30"/>
+                                        <rect key="frame" x="0.0" y="164" width="240" height="30"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="DLd-50-c2S" id="fgG-c9-9yD">
                                             <frame key="frameInset" width="240" height="29"/>
@@ -279,10 +282,10 @@
             </objects>
             <point key="canvasLocation" x="-615" y="865.14084507042253"/>
         </scene>
-        <!--View Controller-->
+        <!--Estadísticas Último Mes-->
         <scene sceneID="9UY-FJ-R2V">
             <objects>
-                <viewController id="c6Q-5x-dv9" sceneMemberID="viewController">
+                <viewController title="Estadísticas Último Mes" id="c6Q-5x-dv9" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="nEt-lI-tnS"/>
                         <viewControllerLayoutGuide type="bottom" id="UB5-YL-5a9"/>
@@ -292,7 +295,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="2" translatesAutoresizingMaskIntoConstraints="NO" id="1IU-nK-He4" colorLabel="IBBuiltInLabel-Red">
-                                <frame key="frameInset" minX="141" minY="511" width="39" height="37"/>
+                                <frame key="frameInset" minX="141" minY="467" width="39" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="pageIndicatorTintColor" red="0.64381121504338823" green="0.65018558350916433" blue="0.65018558350916433" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="currentPageIndicatorTintColor" red="0.0" green="0.6822187271326593" blue="0.69523471109758173" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -301,51 +304,43 @@
                                 </connections>
                             </pageControl>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Stats-MesV2p.png" translatesAutoresizingMaskIntoConstraints="NO" id="ASz-kk-nJj">
-                                <frame key="frameInset" minX="1" minY="84" width="330" height="208"/>
+                                <frame key="frameInset" minX="1" minY="51" width="303" height="194"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="StatsMesV3.png" translatesAutoresizingMaskIntoConstraints="NO" id="nLL-i3-s9g">
-                                <frame key="frameInset" minY="299" width="331" height="235"/>
+                                <frame key="frameInset" minX="15" minY="254" width="290" height="225"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jDb-9H-e2B">
-                                <frame key="frameInset" minY="19" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.1785244955957748" green="0.49010875746297178" blue="0.49464941599647405" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <items>
-                                    <navigationItem title="Estadísticas Último Mes" id="5sn-OB-Dfx"/>
-                                </items>
-                            </navigationBar>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ingresos último mes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XCZ-fZ-ndV">
-                                <frame key="frameInset" minX="4" minY="71" width="154" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ingresos " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XCZ-fZ-ndV">
+                                <frame key="frameInset" minX="4" minY="28" width="154" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Egresos último mes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HNG-XK-etW">
-                                <frame key="frameInset" minX="4" minY="299" width="150" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Egresos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HNG-XK-etW">
+                                <frame key="frameInset" minX="4" minY="253" width="150" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$111.15" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rcO-a1-9qy">
-                                <frame key="frameInset" minX="243" minY="299" width="55" height="21"/>
+                                <frame key="frameInset" minX="243" minY="253" width="55" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Saldo: $37.85" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YLK-yW-v3s">
-                                <frame key="frameInset" minX="114" minY="482" width="105" height="21"/>
+                                <frame key="frameInset" minX="114" minY="448" width="105" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$149.00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="393-VN-o4c">
-                                <frame key="frameInset" minX="194" minY="71" width="152" height="25"/>
+                                <frame key="frameInset" minX="194" minY="28" width="152" height="25"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <nil key="textColor"/>
@@ -359,10 +354,10 @@
             </objects>
             <point key="canvasLocation" x="112.5" y="866.19718309859161"/>
         </scene>
-        <!--View Controller-->
+        <!--Estadísticas Último Año-->
         <scene sceneID="0gG-kd-svy">
             <objects>
-                <viewController id="odo-1j-Tgw" sceneMemberID="viewController">
+                <viewController title="Estadísticas Último Año" id="odo-1j-Tgw" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="vjA-lS-sXr"/>
                         <viewControllerLayoutGuide type="bottom" id="q9x-hR-hy1"/>
@@ -372,7 +367,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="2" currentPage="1" translatesAutoresizingMaskIntoConstraints="NO" id="cyt-eh-Kjw">
-                                <frame key="frameInset" minX="141" minY="523" width="39" height="37"/>
+                                <frame key="frameInset" minX="141" minY="460" width="39" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="pageIndicatorTintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="currentPageIndicatorTintColor" red="0.0" green="0.6822187271326593" blue="0.69523471109758173" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -380,55 +375,47 @@
                                     <segue destination="c6Q-5x-dv9" kind="show" id="yxO-RF-MbJ"/>
                                 </connections>
                             </pageControl>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="egE-jG-hWt">
-                                <frame key="frameInset" minY="25" height="44" maxX="1"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.1785244956" green="0.49010875749999999" blue="0.49464941600000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <items>
-                                    <navigationItem title="Estadísticas Último Año" id="8r5-L7-UQI"/>
-                                </items>
-                            </navigationBar>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ingresos último año" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mk2-89-O9u">
-                                <frame key="frameInset" minX="4" minY="71" width="150" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ingresos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mk2-89-O9u">
+                                <frame key="frameInset" minX="4" minY="8" width="150" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Egresos último año" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jDK-pI-MdZ">
-                                <frame key="frameInset" minX="4" minY="292" width="146" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Egresos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jDK-pI-MdZ">
+                                <frame key="frameInset" minX="4" minY="218" width="146" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$1207.15" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tWx-SH-n6s">
-                                <frame key="frameInset" minX="237" minY="291" width="67" height="21"/>
+                                <frame key="frameInset" minX="237" minY="217" width="67" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Saldo: $37.85" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cUx-us-EAJ">
-                                <frame key="frameInset" minX="108" minY="498" width="105" height="21"/>
+                                <frame key="frameInset" minX="108" minY="435" width="105" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$1245.00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ppV-2R-U1p">
-                                <frame key="frameInset" minX="219" minY="71" width="101" height="25"/>
+                                <frame key="frameInset" minX="219" minY="8" width="101" height="25"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="StatsAnualv2.png" translatesAutoresizingMaskIntoConstraints="NO" id="uN4-MG-vHJ">
-                                <frame key="frameInset" minX="-9" minY="315" width="343" height="180"/>
+                                <frame key="frameInset" minX="2" minY="247" width="313" height="180"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="StatsAnualv3.png" translatesAutoresizingMaskIntoConstraints="NO" id="v2T-fh-pfC">
-                                <frame key="frameInset" minX="4" minY="69" width="320" height="214"/>
+                                <frame key="frameInset" minY="7" width="320" height="214"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -439,16 +426,16 @@
             </objects>
             <point key="canvasLocation" x="112.5" y="1620.4225352112676"/>
         </scene>
-        <!--View Controller-->
+        <!--Tarjetas Virtuales-->
         <scene sceneID="U9Y-3E-kmB">
             <objects>
-                <viewController id="eru-9K-XbY" sceneMemberID="viewController">
+                <viewController title="Tarjetas Virtuales" id="eru-9K-XbY" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="cqG-YV-J22"/>
                         <viewControllerLayoutGuide type="bottom" id="ggy-kC-Poh"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Bly-0o-mGb">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Listado de Tarjetas Virtuales Activas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kge-Ka-rrH">
@@ -518,7 +505,7 @@
                         <viewControllerLayoutGuide type="bottom" id="IWb-QI-MeY"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="5Q9-YP-fOG">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -527,16 +514,16 @@
             </objects>
             <point key="canvasLocation" x="2068" y="566"/>
         </scene>
-        <!--Create Card View Controller-->
+        <!--Nueva Tarjeta Virtual-->
         <scene sceneID="39i-p7-M09">
             <objects>
-                <viewController id="DRS-rH-LA8" customClass="CreateCardViewController" customModule="DEM" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Nueva Tarjeta Virtual" id="DRS-rH-LA8" customClass="CreateCardViewController" customModule="DEM" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="LUF-7x-Nwr"/>
                         <viewControllerLayoutGuide type="bottom" id="PEd-dD-wRq"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="bBm-3O-khm">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Saldo DEM disponible" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kWe-nU-KTe">
@@ -589,49 +576,36 @@
             </objects>
             <point key="canvasLocation" x="1811" y="-104"/>
         </scene>
-        <!--Success View Controller-->
+        <!--Su nueva tarjeta virtual-->
         <scene sceneID="qgM-R8-MaJ">
             <objects>
-                <viewController id="qg7-Co-aCv" customClass="SuccessViewController" customModule="DEM" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Su nueva tarjeta virtual" id="qg7-Co-aCv" customClass="SuccessViewController" customModule="DEM" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Byj-kk-Hqq"/>
                         <viewControllerLayoutGuide type="bottom" id="hzS-wd-5z6"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="9wj-st-BCZ">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="TarjetaLimpiav2.png" translatesAutoresizingMaskIntoConstraints="NO" id="ldQ-iE-UTm">
-                                <frame key="frameInset" minX="16" minY="105" width="288" height="195"/>
+                                <frame key="frameInset" minX="16" minY="130" width="288" height="175"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tarjeta virtual creada exitosamente" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NVo-Mh-qCI">
-                                <frame key="frameInset" minX="27" minY="88" width="268" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2gy-uo-Pxx">
-                                <frame key="frameInset" minX="66" minY="205" width="190" height="21"/>
+                                <frame key="frameInset" minX="42" minY="225" width="190" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aIq-lo-g7q">
-                                <frame key="frameInset" minY="20" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <items>
-                                    <navigationItem title="Title" id="AYq-X1-BTy">
-                                        <barButtonItem key="leftBarButtonItem" image="home2.png" id="6GH-1s-b6m">
-                                            <connections>
-                                                <action selector="goHome:" destination="qg7-Co-aCv" id="pzU-yu-RhB"/>
-                                            </connections>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tarjeta virtual creada exitosamente!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NVo-Mh-qCI">
+                                <frame key="frameInset" minX="26" minY="38" width="273" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -655,12 +629,11 @@
         <image name="TarjetaLimpiav2.png" width="2000" height="1221"/>
         <image name="Transfer.jpg" width="467" height="467"/>
         <image name="VC1.jpg" width="467" height="466"/>
-        <image name="home2.png" width="15" height="15"/>
         <image name="logotipo 1b.png" width="408" height="287"/>
         <image name="pagoQR.jpg" width="467" height="467"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="1hk-Mr-fF6"/>
+        <segue reference="yxO-RF-MbJ"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.90206512859999999" green="0.92029931070000004" blue="0.9568666643" alpha="0.95927868149999995" colorSpace="custom" customColorSpace="sRGB"/>
 </document>
