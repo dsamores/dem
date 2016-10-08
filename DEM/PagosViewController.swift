@@ -28,6 +28,7 @@ class PagosViewController: UIViewController, UITextFieldDelegate {
         }
         
         task.resume()
+        self.performSegue(withIdentifier: "pagoSegue", sender: nil)
     }
     
     override func viewDidLoad() {

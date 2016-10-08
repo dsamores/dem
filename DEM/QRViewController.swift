@@ -57,13 +57,39 @@ class QRViewController: UIViewController, QRCodeReaderViewControllerDelegate {
     // MARK: - QRCodeReader Delegate Methods
     
     func reader(_ reader: QRCodeReaderViewController, didScanResult result: QRCodeReaderResult) {
+        let fullNameArr = result.value.components(separatedBy: "\n")
+        
+        let tel    = fullNameArr[0]
+        let monto = fullNameArr[1]
+        
         dismiss(animated: true) { [weak self] in
             let alert = UIAlertController(
-                title: "QRCodeReader",
-                message: String (format:"%@ (of type %@)", result.value, result.metadataType),
+                title: "Confirmar Pago",
+                message: String (format:"Telefono: %@\nMonto: %@", tel, monto),
                 preferredStyle: .alert
             )
-            alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
+//            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+//            alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+            
+            let okAction = UIAlertAction(title: "OK", style: .default) {
+                UIAlertAction in
+                
+                let url = NSURL(string: "http://172.141.20.181:8888/dem/rest.php?task=pago&telefono=" + tel + "&monto=" + monto)
+                
+                let task = URLSession.shared.dataTask(with: url! as URL) {(data, response, error) in
+                    print(response)
+                }
+                
+                task.resume()
+            }
+            let cancelAction = UIAlertAction(title: "Cancel", style: .cancel) {
+                UIAlertAction in
+                NSLog("Cancel Pressed")
+            }
+            
+            // Add the actions
+            alert.addAction(okAction)
+            alert.addAction(cancelAction)
             
             self?.present(alert, animated: true, completion: nil)
         }

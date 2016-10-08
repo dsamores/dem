@@ -28,6 +28,7 @@
 		C63765681DA954DC0021CA30 /* QRCodeReaderViewControllerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63765611DA954DC0021CA30 /* QRCodeReaderViewControllerBuilder.swift */; };
 		C63765691DA954DC0021CA30 /* ReaderOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63765621DA954DC0021CA30 /* ReaderOverlayView.swift */; };
 		C637656A1DA954DC0021CA30 /* QRCodeReaderResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63765631DA954DC0021CA30 /* QRCodeReaderResult.swift */; };
+		C637656C1DA961320021CA30 /* ExitoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C637656B1DA961320021CA30 /* ExitoViewController.swift */; };
 		C6BEEE691DA9248C003360E8 /* SuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BEEE681DA9248C003360E8 /* SuccessViewController.swift */; };
 		C6BEEE6B1DA9294E003360E8 /* PagosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BEEE6A1DA9294E003360E8 /* PagosViewController.swift */; };
 		C6BEEE6D1DA93959003360E8 /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = C6BEEE6C1DA93959003360E8 /* home.png */; };
@@ -81,6 +82,7 @@
 		C63765611DA954DC0021CA30 /* QRCodeReaderViewControllerBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeReaderViewControllerBuilder.swift; sourceTree = "<group>"; };
 		C63765621DA954DC0021CA30 /* ReaderOverlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReaderOverlayView.swift; sourceTree = "<group>"; };
 		C63765631DA954DC0021CA30 /* QRCodeReaderResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeReaderResult.swift; sourceTree = "<group>"; };
+		C637656B1DA961320021CA30 /* ExitoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExitoViewController.swift; sourceTree = "<group>"; };
 		C6BEEE681DA9248C003360E8 /* SuccessViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuccessViewController.swift; sourceTree = "<group>"; };
 		C6BEEE6A1DA9294E003360E8 /* PagosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagosViewController.swift; sourceTree = "<group>"; };
 		C6BEEE6C1DA93959003360E8 /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home.png; sourceTree = "<group>"; };
@@ -166,6 +168,7 @@
 				E2D06F3E1DA87612005E8CE8 /* MapView.swift */,
 				E2D06F3C1DA86F12005E8CE8 /* Sitios.swift */,
 				C6FF67EE1DA3400700EDBDB5 /* Main.storyboard */,
+				C637656B1DA961320021CA30 /* ExitoViewController.swift */,
 				C6BEEE6A1DA9294E003360E8 /* PagosViewController.swift */,
 				C6FF67F11DA3400700EDBDB5 /* Assets.xcassets */,
 				C6FF67F31DA3400700EDBDB5 /* LaunchScreen.storyboard */,
@@ -323,6 +326,7 @@
 				C63765681DA954DC0021CA30 /* QRCodeReaderViewControllerBuilder.swift in Sources */,
 				C6BEEE7D1DA9511B003360E8 /* CHANGELOG.md in Sources */,
 				C63765641DA954DC0021CA30 /* QRCodeReader.swift in Sources */,
+				C637656C1DA961320021CA30 /* ExitoViewController.swift in Sources */,
 				C63765651DA954DC0021CA30 /* QRCodeReaderViewController.swift in Sources */,
 				C6BEEE691DA9248C003360E8 /* SuccessViewController.swift in Sources */,
 				E2D06F3F1DA87612005E8CE8 /* MapView.swift in Sources */,
