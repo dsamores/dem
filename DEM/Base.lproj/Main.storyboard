@@ -125,7 +125,7 @@
         <scene sceneID="cbf-2h-d8K">
             <objects>
                 <navigationController id="9z7-EN-wLz" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" opaque="NO" contentMode="scaleToFill" misplaced="YES" translucent="NO" id="A9K-PL-jg4">
+                    <navigationBar key="navigationBar" opaque="NO" contentMode="scaleToFill" translucent="NO" id="A9K-PL-jg4">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" white="0.42245370370370372" alpha="0.97303082190000001" colorSpace="calibratedWhite"/>
@@ -161,7 +161,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nnE-Vl-Raq">
-                                <frame key="frameInset" minX="4" width="93" height="94" maxY="26"/>
+                                <frame key="frameInset" minX="4" width="93" height="94" maxY="26.5"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <state key="normal" title="Transacciones" image="Transfer.jpg"/>
                                 <connections>
@@ -169,7 +169,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fmf-3y-uBO">
-                                <frame key="frameInset" width="92" height="94" maxX="7" maxY="26"/>
+                                <frame key="frameInset" width="91.5" height="94" maxX="7.5" maxY="26.5"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
                                 <state key="normal" title="Estadísticas" image="Stats.jpg"/>
                                 <connections>
@@ -177,7 +177,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qjj-7i-Os8">
-                                <frame key="frameInset" minX="4" width="93" height="92" maxY="148"/>
+                                <frame key="frameInset" minX="4" width="93" height="92.5" maxY="148"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <state key="normal" title="Historial y Saldo" image="Historial.jpg"/>
                                 <connections>
@@ -185,7 +185,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YS3-HA-rMU">
-                                <frame key="frameInset" minX="114" width="93" height="92" maxY="148"/>
+                                <frame key="frameInset" minX="114" width="93" height="92.5" maxY="148"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <state key="normal" title="Tarjeta Virtual" image="VC1.jpg"/>
                                 <connections>
@@ -193,12 +193,12 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tQq-TD-WPD">
-                                <frame key="frameInset" width="92" height="91" maxX="7" maxY="149"/>
+                                <frame key="frameInset" width="91.5" height="91.5" maxX="7.5" maxY="149"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
                                 <state key="normal" title="Pago con QR" image="pagoQR.jpg"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2rW-pi-xfX">
-                                <frame key="frameInset" minX="114" width="93" height="94" maxY="26"/>
+                                <frame key="frameInset" minX="114" width="93" height="94" maxY="26.5"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <state key="normal" title="Lugares de Interés" image="LugarInteres.jpg"/>
                                 <connections>
@@ -426,7 +426,7 @@
         <!--Tarjetas Virtuales-->
         <scene sceneID="U9Y-3E-kmB">
             <objects>
-                <viewController title="Tarjetas Virtuales" id="eru-9K-XbY" sceneMemberID="viewController">
+                <viewController title="Tarjetas Virtuales" id="eru-9K-XbY" customClass="ViewControllerVC" customModule="DEM" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="cqG-YV-J22"/>
                         <viewControllerLayoutGuide type="bottom" id="ggy-kC-Poh"/>
@@ -436,14 +436,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Listado de Tarjetas Virtuales Activas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kge-Ka-rrH">
-                                <frame key="frameInset" minX="16" minY="62" width="277" height="21"/>
+                                <frame key="frameInset" minX="10" minY="114" width="310" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="DAQ-hF-ULK">
+                                <frame key="frameInset" minX="10" minY="165" width="301" height="162"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J4X-FO-HQ4">
-                                <frame key="frameInset" minX="161" minY="91" width="150" height="30"/>
+                                <frame key="frameInset" minX="161" minY="37" width="150" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Solicitar tarjeta virtual">
                                     <color key="titleColor" red="0.2786518046" green="0.3327830853" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -452,11 +457,20 @@
                                     <segue destination="DRS-rH-LA8" kind="show" id="caI-Yb-y0r"/>
                                 </connections>
                             </button>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="DAQ-hF-ULK">
-                                <frame key="frameInset" minX="10" minY="143" width="301" height="425"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tarjeta N. 5345 2456 1988" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bdW-DX-aaw">
+                                <frame key="frameInset" minX="16" minY="187" width="208" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </tableView>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tarjeta N. 5218 0088 1243" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BJw-Yp-NpB">
+                                <frame key="frameInset" minX="16" minY="222" width="205" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
