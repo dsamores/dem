@@ -18,7 +18,7 @@ class CreateCardViewController: UIViewController {
     var cardCVV = ""
     
     @IBAction func createCardAction(_ sender: UIButton) {
-        let url = NSURL(string: "http://127.0.0.1:8888/dem/rest.php?task=tarjeta")
+        let url = NSURL(string: "http://172.141.20.181:8888/dem/rest.php?task=tarjeta")
         
         let task = URLSession.shared.dataTask(with: url! as URL) {(data, response, error) in
             if let data = data {

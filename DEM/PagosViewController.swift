@@ -13,8 +13,15 @@ class PagosViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var telefonoTextField: UITextField!
     @IBOutlet weak var montoTextField: UITextField!
     
+    @IBAction func goHome(_ sender: AnyObject) {
+        print("qwerqwer")
+        print(self.navigationController)
+        DispatchQueue.main.async {
+            _ = self.navigationController?.popToRootViewController(animated: true)
+        }
+    }
     @IBAction func pagar(_ sender: AnyObject) {
-        let url = NSURL(string: "http://127.0.0.1:8888/dem/rest.php?task=pago&telefono=" + self.telefonoTextField.text! + "&monto=" + self.montoTextField.text!)
+        let url = NSURL(string: "http://172.141.20.181:8888/dem/rest.php?task=pago&telefono=" + self.telefonoTextField.text! + "&monto=" + self.montoTextField.text!)
         
         let task = URLSession.shared.dataTask(with: url! as URL) {(data, response, error) in
             print(response)
