@@ -9,11 +9,15 @@
 
 import UIKit
 import MapKit
-class ViewControllerMap: UIViewController {
+class ViewControllerMap: UIViewController, UITableViewDataSource {
     
+    @IBOutlet weak var tableCentros: UITableView!
     @IBOutlet weak var mapView: MKMapView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.tableCentros.dataSource = self
+        
                 let initialLocation = CLLocation(latitude: -0.1763008, longitude: -78.4794254)
         // set initial location in Quito
     
@@ -64,6 +68,21 @@ class ViewControllerMap: UIViewController {
                                                                   regionRadius * 2.0, regionRadius * 2.0)
         mapView.setRegion(coordinateRegion, animated: true)
         
+    }
+    
+    var centros = ["Servipagos NNUU", "Sana Sana Shyris", "Banco del Pacifico", "Banco Amazonas"]
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) ->Int {
+        return self.centros.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "celda", for: indexPath)
+        
+        let centrosName = self.centros[indexPath.row]
+        cell.textLabel?.text = centrosName
+        
+        return cell
     }
 
 }
