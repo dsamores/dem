@@ -241,7 +241,7 @@
                                         <rect key="frame" x="0.0" y="28" width="240" height="30"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ji1-En-RZs" id="WAy-xU-4gB">
-                                            <frame key="frameInset" width="240" height="29"/>
+                                            <frame key="frameInset" width="240" height="29.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -249,7 +249,7 @@
                                         <rect key="frame" x="0.0" y="58" width="240" height="30"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="vAn-cl-Q5n" id="KfR-ZF-ASI">
-                                            <frame key="frameInset" width="240" height="29"/>
+                                            <frame key="frameInset" width="240" height="29.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -257,7 +257,7 @@
                                         <rect key="frame" x="0.0" y="88" width="240" height="30"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="DLd-50-c2S" id="fgG-c9-9yD">
-                                            <frame key="frameInset" width="240" height="29"/>
+                                            <frame key="frameInset" width="240" height="29.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -581,10 +581,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="LugarInteres.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="PN6-hF-qrp">
-                                <frame key="frameInset" minX="41" minY="140" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2gy-uo-Pxx">
                                 <frame key="frameInset" minX="66" minY="205" width="190" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
