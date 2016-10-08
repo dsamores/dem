@@ -155,7 +155,7 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logotipo 1b.png" translatesAutoresizingMaskIntoConstraints="NO" id="9dh-tg-Kro">
-                                <frame key="frameInset" minX="59" minY="72" width="202" height="139"/>
+                                <frame key="frameInset" minX="43" minY="248" width="202" height="139"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
