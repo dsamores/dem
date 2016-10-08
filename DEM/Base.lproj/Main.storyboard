@@ -15,7 +15,7 @@
                         <viewControllerLayoutGuide type="bottom" id="bly-hy-AZb"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="9jB-Ps-7P3">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VQK-Pf-7Pf">
@@ -88,7 +88,7 @@
                         <viewControllerLayoutGuide type="bottom" id="twX-bw-XzE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="UoZ-PE-czp">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cru-ea-lgo">
@@ -146,7 +146,7 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" opaque="NO" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nnE-Vl-Raq">
@@ -215,7 +215,7 @@
                         <viewControllerLayoutGuide type="bottom" id="rQe-Gb-gsb"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="O7S-Qh-WIP">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gkj-h4-6P4">
@@ -284,7 +284,7 @@
                         <viewControllerLayoutGuide type="bottom" id="UB5-YL-5a9"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="oi2-gU-u7c">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="2" translatesAutoresizingMaskIntoConstraints="NO" id="1IU-nK-He4" colorLabel="IBBuiltInLabel-Red">
@@ -364,7 +364,7 @@
                         <viewControllerLayoutGuide type="bottom" id="q9x-hR-hy1"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="zPg-WQ-uB5">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="2" currentPage="1" translatesAutoresizingMaskIntoConstraints="NO" id="cyt-eh-Kjw">
@@ -444,7 +444,7 @@
                         <viewControllerLayoutGuide type="bottom" id="ggy-kC-Poh"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Bly-0o-mGb">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Listado de Tarjetas Virtuales Activas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kge-Ka-rrH">
@@ -484,7 +484,7 @@
                         <viewControllerLayoutGuide type="bottom" id="IWb-QI-MeY"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="5Q9-YP-fOG">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -502,7 +502,7 @@
                         <viewControllerLayoutGuide type="bottom" id="PEd-dD-wRq"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="bBm-3O-khm">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Saldo DEM disponible" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kWe-nU-KTe">
@@ -564,9 +564,13 @@
                         <viewControllerLayoutGuide type="bottom" id="hzS-wd-5z6"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="9wj-st-BCZ">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="TarjetaLimpiav2.png" translatesAutoresizingMaskIntoConstraints="NO" id="ldQ-iE-UTm">
+                                <frame key="frameInset" minX="16" minY="105" width="288" height="195"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tarjeta virtual creada exitosamente" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NVo-Mh-qCI">
                                 <frame key="frameInset" minX="26" minY="62" width="268" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -574,12 +578,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="LugarInteres.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="PN6-hF-qrp">
-                                <frame key="frameInset" minX="40" minY="110" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2gy-uo-Pxx">
-                                <frame key="frameInset" minX="66" minY="181" width="190" height="21"/>
+                                <frame key="frameInset" minX="37" minY="214" width="190" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -605,6 +605,7 @@
         <image name="StatsAnualv2.png" width="2126" height="1181"/>
         <image name="StatsAnualv3.png" width="1654" height="1063"/>
         <image name="StatsMesV3.png" width="1181" height="945"/>
+        <image name="TarjetaLimpiav2.png" width="2000" height="1221"/>
         <image name="Transfer.jpg" width="467" height="467"/>
         <image name="VC1.jpg" width="467" height="466"/>
         <image name="logotipo 1b.png" width="408" height="287"/>
