@@ -18,6 +18,7 @@
 		654C89C81DA89A230070926E /* pagoQR.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 654C89C31DA89A230070926E /* pagoQR.jpg */; };
 		654C89C91DA89A230070926E /* Stats.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 654C89C41DA89A230070926E /* Stats.jpg */; };
 		654C89CA1DA89A230070926E /* VC1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 654C89C51DA89A230070926E /* VC1.jpg */; };
+		65A98A091DA9249000EE0CC6 /* TableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A98A081DA9249000EE0CC6 /* TableController.swift */; };
 		C60DB8A41DA5E74B005382B1 /* CreateCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C60DB8A31DA5E74B005382B1 /* CreateCardViewController.swift */; };
 		C6BEEE691DA9248C003360E8 /* SuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BEEE681DA9248C003360E8 /* SuccessViewController.swift */; };
 		C6BEEE6B1DA9294E003360E8 /* PagosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BEEE6A1DA9294E003360E8 /* PagosViewController.swift */; };
@@ -56,6 +57,7 @@
 		654C89C31DA89A230070926E /* pagoQR.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pagoQR.jpg; sourceTree = "<group>"; };
 		654C89C41DA89A230070926E /* Stats.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Stats.jpg; sourceTree = "<group>"; };
 		654C89C51DA89A230070926E /* VC1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = VC1.jpg; sourceTree = "<group>"; };
+		65A98A081DA9249000EE0CC6 /* TableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableController.swift; sourceTree = "<group>"; };
 		C60DB8A31DA5E74B005382B1 /* CreateCardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateCardViewController.swift; sourceTree = "<group>"; };
 		C6BEEE681DA9248C003360E8 /* SuccessViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuccessViewController.swift; sourceTree = "<group>"; };
 		C6BEEE6A1DA9294E003360E8 /* PagosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagosViewController.swift; sourceTree = "<group>"; };
@@ -121,6 +123,7 @@
 				E2D06F381DA82ED7005E8CE8 /* ViewControllerMap.swift */,
 				E2D06F3E1DA87612005E8CE8 /* MapView.swift */,
 				E2D06F3C1DA86F12005E8CE8 /* Sitios.swift */,
+				65A98A081DA9249000EE0CC6 /* TableController.swift */,
 				C6FF67EE1DA3400700EDBDB5 /* Main.storyboard */,
 				C6BEEE6A1DA9294E003360E8 /* PagosViewController.swift */,
 				C6FF67F11DA3400700EDBDB5 /* Assets.xcassets */,
@@ -270,6 +273,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65A98A091DA9249000EE0CC6 /* TableController.swift in Sources */,
 				C60DB8A41DA5E74B005382B1 /* CreateCardViewController.swift in Sources */,
 				C6BEEE691DA9248C003360E8 /* SuccessViewController.swift in Sources */,
 				E2D06F3F1DA87612005E8CE8 /* MapView.swift in Sources */,
