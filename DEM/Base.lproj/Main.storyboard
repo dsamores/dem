@@ -185,6 +185,9 @@
                                 <frame key="frameInset" width="92" height="91" maxX="7" maxY="149"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
                                 <state key="normal" title="Pago con QR" image="pagoQR.jpg"/>
+                                <connections>
+                                    <segue destination="UEV-7q-UDE" kind="show" id="vTU-de-2Qw"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2rW-pi-xfX">
                                 <frame key="frameInset" minX="114" width="93" height="94" maxY="26"/>
@@ -241,7 +244,7 @@
                                         <rect key="frame" x="0.0" y="28" width="240" height="30"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ji1-En-RZs" id="WAy-xU-4gB">
-                                            <frame key="frameInset" width="240" height="29.5"/>
+                                            <frame key="frameInset" width="240" height="29"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -249,7 +252,7 @@
                                         <rect key="frame" x="0.0" y="58" width="240" height="30"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="vAn-cl-Q5n" id="KfR-ZF-ASI">
-                                            <frame key="frameInset" width="240" height="29.5"/>
+                                            <frame key="frameInset" width="240" height="29"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -257,7 +260,7 @@
                                         <rect key="frame" x="0.0" y="88" width="240" height="30"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="DLd-50-c2S" id="fgG-c9-9yD">
-                                            <frame key="frameInset" width="240" height="29.5"/>
+                                            <frame key="frameInset" width="240" height="29"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -479,6 +482,34 @@
             <point key="canvasLocation" x="1005" y="-103.52112676056338"/>
         </scene>
         <!--View Controller-->
+        <scene sceneID="I7L-cr-anT">
+            <objects>
+                <viewController id="UEV-7q-UDE" customClass="QRViewController" customModule="DEM" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xf0-ec-xxP"/>
+                        <viewControllerLayoutGuide type="bottom" id="I3v-q6-52V"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="LfA-EP-jJO">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KSx-2M-OuW">
+                                <frame key="frameInset" minX="116" minY="269" width="88" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Escanear QR"/>
+                                <connections>
+                                    <action selector="scanAction:" destination="UEV-7q-UDE" eventType="touchUpInside" id="6s1-Cd-ZPu"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f5o-9Z-1CF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1110" y="659"/>
+        </scene>
+        <!--View Controller-->
         <scene sceneID="zGp-cp-Bz8">
             <objects>
                 <viewController id="rnG-xb-qM6" sceneMemberID="viewController">
@@ -494,7 +525,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Ue-eB-nG0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1005" y="594"/>
+            <point key="canvasLocation" x="2068" y="566"/>
         </scene>
         <!--Create Card View Controller-->
         <scene sceneID="39i-p7-M09">
